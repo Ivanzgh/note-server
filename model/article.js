@@ -20,10 +20,11 @@ const article = new mongoose.Schema({
         type: Number,
         default: 0,
     },
-    commontnums: {
+    commentnums: {
         type: Number,
         default: 0
     },
+    // createTime: { type: Date, default: Date.now}
 }, {versionKey: false, timestamps: {createdAt: "createTime", updatedAt: "updateTime"}});
 
 module.exports = mongoose.model("article", article);
